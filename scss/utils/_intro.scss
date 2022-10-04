@@ -1,0 +1,20 @@
+@use "../globals";
+
+.intro {
+  text-align: center;
+
+  .intro__title {
+    max-width: 18.75rem;
+    margin-left: auto;
+    margin-right: auto;
+    color: globals.$Very-Dark-Magenta;
+    font-weight: 900;
+    line-height: 1;
+  }
+  .intro__text {
+    // max-width: 400px;
+    margin: 1.5rem auto;
+    color: globals.$Dark-Grayish-Magenta;
+    // color: red;
+  }
+}

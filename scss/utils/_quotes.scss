@@ -1,0 +1,39 @@
+@use "../globals";
+
+.quotes {
+  li {
+    background-color: globals.$Very-Dark-Magenta;
+    color: globals.$White;
+    border-radius: 0.5rem;
+    padding: 1.7rem 1.5rem;
+    max-width: 25rem;
+    margin: 0 auto;
+    // height: 100%;
+
+    @media (min-width: 50rem) {
+      &:nth-of-type(2) {
+        transform: translateY(2rem);
+      }
+
+      &:nth-of-type(3) {
+        transform: translateY(4rem);
+      }
+    }
+  }
+
+  .quote {
+    // letter-spacing: 1px;
+    line-height: 1.5;
+  }
+
+  img {
+    width: 3.125rem;
+    // height: 50px;
+    border-radius: 50%;
+  }
+
+  .status {
+    color: globals.$Soft-Pink;
+    margin-top: 0.2rem;
+  }
+}

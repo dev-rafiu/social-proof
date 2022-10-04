@@ -1,0 +1,27 @@
+main {
+  min-height: 100vh;
+
+  ul {
+    list-style: none;
+  }
+}
+
+.split,
+.flex {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+.split {
+  margin-bottom: 1.2rem;
+}
+
+.flex {
+  flex-direction: column;
+  align-items: center;
+
+  @media (min-width: 50rem) {
+    flex-direction: row;
+    // background: yellow;
+  }
+}

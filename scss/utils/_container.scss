@@ -1,0 +1,28 @@
+.container {
+  margin: 0 auto;
+  padding: 5rem 1rem;
+  max-width: 70rem;
+  // background-color: #333;
+
+  @media screen and (min-width: 50rem) {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    .intro {
+      grid-column: 1/2;
+      text-align: left;
+
+      .intro__title,
+      .intro__text {
+        margin-left: 0;
+        margin-right: 0;
+      }
+    }
+    .ratings {
+      grid-column: 2/3;
+      margin-top: 0;
+    }
+    .quotes {
+      grid-column: 1/-1;
+    }
+  }
+}

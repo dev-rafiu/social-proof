@@ -1,0 +1,53 @@
+@use "../globals";
+
+.ratings {
+  margin: 3rem 0;
+  // background-color: green;
+
+  > * + * {
+    margin-top: 1rem;
+  }
+
+  li {
+    background-color: globals.$Light-Grayish-Magenta;
+    // background-color: yellow;
+    text-align: center;
+    padding: 0.8rem 0;
+    color: globals.$Very-Dark-Magenta;
+    font-weight: 700;
+    border-radius: 0.5rem;
+    max-width: 25rem;
+    margin-left: auto;
+    margin-right: auto;
+
+    &::before {
+      content: "";
+      display: block;
+      width: 100px;
+      height: 1rem;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 0.8rem;
+      background: url(/images/icon-star.svg);
+      background-repeat: space;
+    }
+
+    @media (min-width: 50rem) {
+      display: flex;
+      align-items: center;
+      margin-right: 0;
+
+      &::before {
+        margin: 0 1.5rem 0 1rem;
+      }
+
+      &:first-of-type {
+        transform: translateX(-5rem);
+      }
+
+      &:nth-of-type(2) {
+        transform: translateX(-2.5rem);
+      }
+    }
+  }
+}
